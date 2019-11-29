@@ -1,0 +1,16 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorButtons</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimaryInverse">@color/colorButtons</item>
+        <item name="android:buttonStyle">@style/AppTheme.RoundedCornerMaterialButton</item>
+        <item name="colorButtonNormal">@color/colorButtons</item>
+        <item name="android:textAppearanceButton">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape</item>
+    </style>
+</resources>

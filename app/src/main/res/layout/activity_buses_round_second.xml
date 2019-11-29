@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".games.buses.rounds.RoundSecond">
+
+    <ImageView
+        android:id="@+id/imageView1_1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView2_1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginStart="110dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3_1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1_1"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView2_2"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2_1"
+        app:layout_constraintTop_toTopOf="@+id/imageView2_1"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView3_1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginStart="75dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3_2"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView3_2"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4_2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3_1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2_1"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView3_3"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3_2"
+        app:layout_constraintTop_toTopOf="@+id/imageView3_2"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView4_1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4_2"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView4_2"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5_2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4_1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3_1"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView4_3"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4_2"
+        app:layout_constraintTop_toTopOf="@+id/imageView4_2"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView4_4"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4_3"
+        app:layout_constraintTop_toTopOf="@+id/imageView4_3"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView5_1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5_2"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView5_2"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5_1"
+        app:layout_constraintTop_toTopOf="@+id/imageView5_3"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView5_3"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="@string/card_image"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNext"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5_2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4_2"
+        app:srcCompat="@drawable/card_back" />
+
+    <ImageView
+        android:id="@+id/imageView5_4"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5_5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5_3"
+        app:layout_constraintTop_toTopOf="@+id/imageView5_3"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageView5_5"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5_4"
+        app:layout_constraintTop_toTopOf="@+id/imageView5_4"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <Button
+        android:id="@+id/buttonTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/turn_card"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNext"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPlace"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonTurn"
+        app:layout_constraintTop_toTopOf="@+id/buttonTurn" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/next"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

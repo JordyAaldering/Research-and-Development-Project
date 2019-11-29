@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainMenu"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/logoDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/game_beerbear_main" />
+
+    <Button
+        android:id="@+id/buttonBuses"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/game_buses_icon"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPoker"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+    <TextView
+        android:id="@+id/textViewBuses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/buses"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBuses"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/buttonBuses"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBuses" />
+
+    <Button
+        android:id="@+id/buttonPoker"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/game_poker_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonBuses"
+        app:layout_constraintTop_toTopOf="@+id/buttonBuses" />
+
+    <TextView
+        android:id="@+id/textViewPoker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/poker"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPoker"
+        app:layout_constraintStart_toStartOf="@+id/buttonPoker"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPoker" />
+
+    <Button
+        android:id="@+id/buttonPannen"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/game_pannen_icon"
+        android:text="Not yet\navailable"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMexxen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBuses"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textViewPannen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/pannen"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPannen"
+        app:layout_constraintStart_toStartOf="@+id/buttonPannen"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPannen" />
+
+    <Button
+        android:id="@+id/buttonMexxen"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/game_mexxen_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonPannen"
+        app:layout_constraintTop_toTopOf="@+id/buttonPannen" />
+
+    <TextView
+        android:id="@+id/textViewMexxen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/mexxen"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMexxen"
+        app:layout_constraintStart_toStartOf="@+id/buttonMexxen"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMexxen" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3997916477055946/9996422130"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

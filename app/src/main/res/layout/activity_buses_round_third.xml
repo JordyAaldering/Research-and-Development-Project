@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".games.buses.rounds.RoundThird">
+
+    <TextView
+        android:id="@+id/textViewPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/player_in_the_bus"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewCard1"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCard2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlayers"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageViewCard2"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCard3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCard1"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCard1"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageViewCard3"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCard4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCard2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCard2"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageViewCard4"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCard5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCard3"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCard3"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageViewCard5"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCard6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCard4"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCard4"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageViewCard6"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCard7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCard5"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCard5"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <ImageView
+        android:id="@+id/imageViewCard7"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCard6"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCard6"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/card_image" />
+
+    <Button
+        android:id="@+id/buttonHigher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/higher"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPost"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCard1" />
+
+    <Button
+        android:id="@+id/buttonPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/post"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLower"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonHigher"
+        app:layout_constraintTop_toTopOf="@+id/buttonHigher" />
+
+    <Button
+        android:id="@+id/buttonLower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lower"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonPost"
+        app:layout_constraintTop_toTopOf="@+id/buttonPost" />
+
+    <TextView
+        android:id="@+id/textViewAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/that_answer_is_correct"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHigher" />
+
+    <TextView
+        android:id="@+id/textViewPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/the_previous_card_was"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAnswer" />
+
+    <TextView
+        android:id="@+id/textViewSips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/you_have_to_take"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrevious" />
+
+    <ImageView
+        android:id="@+id/imageViewCardPrev"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:contentDescription="@string/card_image"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPrevious"
+        app:layout_constraintStart_toEndOf="@+id/textViewPrevious"
+        app:layout_constraintTop_toTopOf="@+id/textViewPrevious"
+        app:srcCompat="@drawable/card_back" />
+
+</android.support.constraint.ConstraintLayout>

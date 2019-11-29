@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageView
+        android:id="@+id/tableCard1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="239dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/playerCard1"
+        app:layout_constraintEnd_toStartOf="@+id/tableCard2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/logoDescription" />
+
+    <ImageView
+        android:id="@+id/tableCard2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="114dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStart"
+        app:layout_constraintEnd_toStartOf="@+id/tableCard3"
+        app:layout_constraintStart_toEndOf="@+id/tableCard1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/logoDescription" />
+
+    <ImageView
+        android:id="@+id/tableCard3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="239dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/playerCard2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableCard2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/logoDescription" />
+
+    <ImageView
+        android:id="@+id/tableCard4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginStart="86dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tableCard5"
+        app:layout_constraintEnd_toStartOf="@+id/tableCard5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableCard5"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/logoDescription" />
+
+    <ImageView
+        android:id="@+id/tableCard5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/continueBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableCard4"
+        app:layout_constraintTop_toBottomOf="@+id/tableCard2"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/logoDescription" />
+
+    <ImageView
+        android:id="@+id/playerCard1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginStart="57dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playerCard2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableCard1"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/logoDescription" />
+
+    <ImageView
+        android:id="@+id/playerCard2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerCard1"
+        app:layout_constraintTop_toBottomOf="@+id/tableCard3"
+        app:srcCompat="@drawable/card_back"
+        android:contentDescription="@string/logoDescription" />
+
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="233dp"
+        android:background="@drawable/rounded_shape"
+        android:text="@string/start"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableCard2" />
+
+    <EditText
+        android:id="@+id/editTextShots"
+        style="@style/AppTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginStart="86dp"
+        android:ems="10"
+        android:hint="Shots"
+        android:inputType="number"
+        android:singleLine="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/continueBtn"
+        app:layout_constraintEnd_toStartOf="@+id/continueBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/continueBtn"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="201dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:background="@drawable/rounded_shape"
+        android:text="@string/bet"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextShots"
+        app:layout_constraintTop_toBottomOf="@+id/tableCard5" />
+
+</android.support.constraint.ConstraintLayout>
